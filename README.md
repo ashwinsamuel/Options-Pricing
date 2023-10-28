@@ -54,27 +54,3 @@ I(k_k) &= \int_{0}^{\infty} e^{ixk_j} \phi_T \bigg(x-\frac{i}{2} \bigg) \frac{1}
 python3 Pricing-Models/heston/test.py
 ```
 
-# Markov switching multifractal
-
-* The Markov-switching multifractal (MSM) is a model of asset returns created by Laurent E. Calvet and Adlai J. Fisher that combines stochastic volatility components of diverse durations in financial econometrics (the application of statistical methods to economic data).
-* MSM has been utilized in financial economics to examine the effects of multifrequency risk on pricing. The excess volatility of stock returns relative to fundamentals and the negative skewness of equity returns have both been partially explained by the models. The creation of multifractal jump-diffusions has also been done using them.
-* MSM is tested on equity market and verfied using the return and risk ratio.
-* For more informaton: https://en.wikipedia.org/wiki/Markov_switching_multifractal
-
-```
-python3 Pricing-Models/markov-Switching/test.py
-```
-* This models is optimized using **Numba** so if you have any trouble installing numba refer its official documentation or remove the decorater from markov.py file.
-* Results
- * Model performance for simuated data vs JPUS data is 3.25sec and 1.23 sec respectively.
- * ![Map](https://github.com/white07S/Pricing-Models/blob/main/models/markovSwitching/sim.png)
-  
-  
-# Garman-Kohlhagen Model
-* This approach compares foreign currencies to stocks offering a known dividend return and was created to evaluate currency choices. A "dividend yield" equal to the risk-free interest rate offered in that foreign currency is given to the currency's owner. The Black-Scholes model's stochastic process is also assumed to govern pricing in this model.
-* In this project, you can find the comparision between Black-Scholes and Garman-Kohlhagen Model.
-* For more information: https://repository.arizona.edu/handle/10150/321771
-
-
-
-
